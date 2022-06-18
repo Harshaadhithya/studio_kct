@@ -1,48 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin</title>
 
-    <link href="assets/css/admin.css" rel="stylesheet" />
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Tables</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="admin-bootstrapp\startbootstrap-sb-admin-2-gh-pages\css\sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="C:\xampp\htdocs\studio_repository\studio_kct\sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="C:\xampp\htdocs\studio_repository\studio_kct\sb-admin-2.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+
 </head>
 <body>
-    <section class="admintable">
-    <div class="">
-        <div class="wrapper">
-            <h1>Add Column</h1>
-
-            
-            <form action="" method="POST">
-                <table>
-                    <tr>
-                        <td class="tbl-empty">Artist_id</td>
-                        <td class="tbl-empty"><input type="text" name="artist_id" placeholder="1"></td>
-                    </tr>
-                    <tr>
-                        <td class="tbl-empty">Title</td>
-                        <td class="tbl-empty"><input type="text" name="title" placeholder="title"></td>
-                    </tr>
-                    <tr>
-                        <td class="tbl-empty">Year </td>
-                        <td class="tbl-empty"><input type="text" name="year" placeholder="Eg. 2015"></td>
-                    </tr>
-                    <tr>
-                        <td class="tbl-empty">Price</td>
-                        <td class="tbl-empty"><input type="text" name="price" placeholder="2500"></td>
-                    </tr>
-                    <tr>
-                        <td class="tbl-empty" colspan="2">
-                            <input type="Submit" name="submit" value="Add Column" class="btn-update">
-                    </tr>
-
-                </table>
-            </form>
+   
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
         </div>
-
-    </section>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <tr>
+                                <th>Event Name</th>
+                                <th>Venue</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Requested by</th>
+                                <th>Club/Organization Name</th>
+                                <th>Status</th>
+                                <th>Photographers assigned</th>
+                                <th>is Photos uploaded</th>
+                            </tr>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Venue</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Requested by</th>
+                            <th>Club/Organization Name</th>
+                            <th>Status</th>
+                            <th>Photographers assigned</th>
+                            <th>is Photos uploaded</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <th>Kalam</th>
+                            <th>Ground</th>
+                            <th>June 29, 2022</th>
+                            <th>June 30, 2022</th>
+                            <th>Harsha Adithya</th>
+                            <th>Kalam</th>
+                            <th>approved</th>
+                            <th>False</th>
+                            <th>False</th>
+                        </tr>
+                        <tr>
+                            <th>Yugam Sports</th>
+                            <th>Ground</th>
+                            <th>June 22, 2022</th>
+                            <th>June 29, 2022</th>
+                            <th>Harsha Adithya</th>
+                            <th>Yugam Sports</th>
+                            <th>Waiting</th>
+                            <th>False</th>
+                            <th>False</th>
+                        </tr>
+                        <tr>
+                            <td>E-grid</td>
+                            <td>Auditorium</td>
+                            <th>June 16, 2022</th>
+                            <th>June 17, 2022</th>
+                            <th>Harsha Adithya</th>
+                            <th>EEE department Association</th>
+                            <th>rejected</th>
+                            <th>False</th>
+                            <th>False</th>
+                        </tr>
+                        <tr>
+                            <td>Swagatham</td>
+                            <td>Stage</td>
+                            <th>June 2, 2022</th>
+                            <th>June 3, 2022</th>
+                            <th>Harsha Adithya</th>
+                            <th>Yugam</th>
+                            <th>Accepted</th>
+                            <th>True</th>
+                            <th>True</th>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- /.container-fluid -->
 
 </body>
 </html>
